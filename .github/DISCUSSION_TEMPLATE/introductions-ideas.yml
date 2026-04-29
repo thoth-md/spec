@@ -1,0 +1,28 @@
+title: "[Intro] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Welcome. This template is optional — feel free to ignore the fields and just write something. It's here as a prompt for anyone who'd like one.
+  - type: textarea
+    id: about
+    attributes:
+      label: About you
+      description: Who you are, what you do. As much or as little as you want.
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Markdown context
+      description: What you write markdown for. Editor of choice. Tools you live in.
+      placeholder: "Mostly product specs and runbooks. Obsidian for notes, VS Code for anything that ships."
+    validations:
+      required: false
+  - type: textarea
+    id: wishlist
+    attributes:
+      label: What you wish markdown could do
+      description: Or did differently. Or worked better with. Concrete is better than abstract.
+    validations:
+      required: true
