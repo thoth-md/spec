@@ -1,0 +1,36 @@
+title: "[Open] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Open questions are unresolved design challenges — places where Thoth's direction isn't yet decided and the answer needs working out. This isn't for general help requests or "how do I use X" questions; it's for surfacing real ambiguity in the spec.
+
+        If you're not sure whether your question is open or settled, post it anyway. Worst case, someone points you at the existing decision.
+  - type: textarea
+    id: question
+    attributes:
+      label: The question
+      description: What's unresolved? State it as concretely as possible.
+    validations:
+      required: true
+  - type: textarea
+    id: matters
+    attributes:
+      label: Why it matters
+      description: What does the answer block, shape, or unblock? What downstream decisions depend on it?
+    validations:
+      required: true
+  - type: textarea
+    id: considered
+    attributes:
+      label: Considered so far
+      description: Approaches that have been discussed (here or elsewhere), with trade-offs. If you've seen related work in other markdown variants or tools, link it.
+    validations:
+      required: false
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints
+      description: What must any answer respect? Compatibility, ergonomics, parser limitations, scope boundaries.
+    validations:
+      required: false
