@@ -1,0 +1,56 @@
+title: "[Plugin] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to propose a remark / unified / rehype plugin for inclusion in Thoth's supported set, flag a conflict, or argue for moving a plugin between tiers.
+
+        The three tiers are: **Supported** (officially recommended, tested), **Not supported** (named exclusion with a reason), and **Use at your own risk** (allowed but uncertified).
+  - type: input
+    id: plugin
+    attributes:
+      label: Plugin
+      description: Name and link (npm, GitHub, or both).
+      placeholder: "remark-gfm — https://github.com/remarkjs/remark-gfm"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What it does
+      description: A short description of what the plugin adds — syntax, behavior, output.
+    validations:
+      required: true
+  - type: dropdown
+    id: tier
+    attributes:
+      label: Tier suggestion
+      description: Which tier do you think this plugin belongs in?
+      options:
+        - Supported (Tier 1)
+        - Not supported (Tier 2)
+        - Use at your own risk (Tier 3)
+        - Unsure / want input
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reason for the suggested tier
+      description: Why does this plugin belong in the tier you selected? For "Not supported," what's the conflict or the better Thoth-native approach?
+    validations:
+      required: true
+  - type: textarea
+    id: conflicts
+    attributes:
+      label: Conflicts or overlaps
+      description: Any conflict with current Thoth syntax, or overlap with planned features. Leave blank if none.
+    validations:
+      required: false
+  - type: textarea
+    id: production
+    attributes:
+      label: Used in production
+      description: If you actively use this plugin, briefly — what for? Helps gauge real-world weight versus theoretical interest.
+    validations:
+      required: false
