@@ -1,0 +1,50 @@
+title: "[Proposal] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for proposing a Thoth syntax addition. The fields below help reviewers understand the idea quickly. Be concrete — examples and use cases beat abstract descriptions.
+
+        Before posting, it's worth skimming pinned posts in **Spec foundations** to see what's already in flight. If your proposal pushes Thoth toward a different kind of project (scripting, templating, app platform), see the project scope post first.
+  - type: input
+    id: what
+    attributes:
+      label: What
+      description: One sentence describing the syntax you're proposing.
+      placeholder: "Add `~~~` fenced blocks for collapsible sections."
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Example
+      description: Show what the syntax looks like in use. Paste a markdown sample. Fenced code blocks are fine.
+      placeholder: |
+        ```markdown
+        ~~~ Click to expand
+        Hidden content goes here.
+        ~~~
+        ```
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: What does this enable that current Thoth syntax doesn't? What's the use case?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Considered alternatives
+      description: Other ways the same thing could work, and why this one is better — or where you're uncertain.
+    validations:
+      required: false
+  - type: textarea
+    id: conflicts
+    attributes:
+      label: Conflicts
+      description: Any existing Thoth syntax this collides with, or any markdown convention it might surprise.
+    validations:
+      required: false
